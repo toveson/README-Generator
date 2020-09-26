@@ -23,10 +23,22 @@ SO THAT can quickly create a professional README for a new project
 ```md
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
-THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+THEN a quality, professional README.md is generated with the title of your project and sections entitled 
+Description, 
+<!-- Table of Contents,  -->
+Installation, 
+Usage, 
+License, 
+Contributing, 
+Tests, and 
+<!-- Questions -->
 WHEN I enter my project title
 THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+WHEN I enter a description, 
+installation instructions,
+usage information,
+contribution guidelines, and 
+test instructions
 THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
 WHEN I choose a license for my application from a list of options
 THEN a badge for that license is added hear the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
@@ -107,3 +119,38 @@ You are required to submit the following:
 
 * The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
+
+
+
+
+ # ${data.title}
+
+  ## Description
+  
+  ${data.Description}
+
+  ## Table of Contents
+
+  * [installation](#Installation)
+  * [Usage](#Usage)
+  * [License](#License)
+  * [Credits](#credits)
+  * [Tests](#Tests)
+  * [Questions](#Questions)
+  
+  ## Installation
+  ${data.install}
+
+  ## Usage
+  ${data.usage}
+
+  ## License
+  ${data.license}
+
+  ## Credits
+
+  ## Tests
+  npm test
+
+  ## Questions
+  If you have any questions please feel free to reach out to me at ${data.email}.
