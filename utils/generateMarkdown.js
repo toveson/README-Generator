@@ -28,11 +28,11 @@ function generateMarkdown(data) {
   ## Credits
 
   ## Tests
-  npm test
+  ${data.test}
 
   ## Questions
+  To view my work vist me at ${data.github}
   If you have any questions please feel free to reach out to me at ${data.email}.
-
 `;
 }
 
